@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 error</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <img id="404-not-found" src="img/404.png" alt="error 404 i can't see that file/folder is that the right name of the file/folder?" width="1600" height="700">
+
+    <script>
+        // Function to generate a random index
+        function getRandomIndex(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        // Array of hex codes from darker orange to red
+        var colorArray = [
+            '#FF4500', '#FF6347', '#FF7F50', '#FF8C00',
+            '#CD5C5C', '#DC143C', '#B22222', '#8B0000'
+        ];
+
+        // Get a random hex code from the array
+        var randomColor = colorArray[getRandomIndex(colorArray.length)];
+
+        // Apply the random color to the body's background
+        document.body.style.backgroundColor = randomColor;
+    </script>
+</body>
+</html>

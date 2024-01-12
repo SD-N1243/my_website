@@ -60,3 +60,17 @@ canvas {
     font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+#goofy_bear {
+    animation: spin 1s ease infinite; /* Added 'infinite' to make it spin continuously */
+    
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
